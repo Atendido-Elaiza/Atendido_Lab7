@@ -17,35 +17,35 @@ else:
             final_grade = round(prelim * 0.3333 + midterm * 0.3333 + final * 0.3333)
             if(final_grade <= 100 and final_grade>= 99):
                 grade = 1.00
-                description = "Excellent"
+                display = "Excellent"
             elif(final_grade <= 98 and final_grade >= 96):
                 grade = 1.25
-                description = "Outstanding"
+                display = "Outstanding"
             elif(final_grade <= 95 and final_grade >= 93):
                 grade = 1.50
-                description = "Superior"
+                display = "Superior"
             elif(final_grade <= 92 and final_grade >= 90):
                 grade = 1.75
-                description = "Very Good"
+                display = "Very Good"
             elif(final_grade <= 89 and final_grade >= 87):
                 grade = 2.00
-                description = "Good"
+                display = "Good"
             elif(final_grade <= 86 and final_grade >= 84):
                 grade = 2.25
-                description = "Satisfactory"
+                display = "Satisfactory"
             elif(final_grade <= 83 and final_grade >= 81):
                 grade = 2.50
-                description = "Fairly Satisfactory"
+                display = "Fairly Satisfactory"
             elif(final_grade <= 80 and final_grade >= 78):
                 grade = 2.75
-                description = "Fair"
+                display = "Fair"
             elif(final_grade <= 77 and final_grade >= 75):
                 grade = 3.00
-                description = "Passed"
+                display = "Passed"
             else:
                 grade = 5.0
                 description = "Failed"
                 
         print(f"Final Grade:  {final_grade:.2f}")
         print(f"GPA: {grade}")
-        print("Description: " + description)
+        print("Description: " + display)
